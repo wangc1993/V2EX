@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='userInfo'>
+    <image class='img' src="{{userInfo.avatar_normal}}"></image>
+    <view class='infoBody'>
+      <view class='username'>{{userInfo.username}}</view>
+      <view class='git'>{{"https://github.com/" + userInfo.github}}</view>
+      <view class='time'>
+        <text>{{"V2EX 第" + userInfo.id +"号会员，"}}</text>
+        <text>{{"加入于" + userInfo.created}}</text>
+      </view>
+    </view>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

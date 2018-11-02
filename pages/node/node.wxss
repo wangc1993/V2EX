@@ -1,0 +1,10 @@
+.node-item{
+  border: 2px solid #eee;
+  color: #666;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-weight: bold;
+}
+.node-title {
+    padding-left:100rpx;
+}

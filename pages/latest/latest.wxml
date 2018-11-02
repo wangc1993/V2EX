@@ -1,0 +1,18 @@
+<view>
+  <block wx:for="{{latestList}}" wx:key="index">
+      <view class="topic-item">
+        <image class="member-avatar" id="{{item.member.id}}" src="{{item.member.avatar_normal}}" catchtap='toUserInfo'></image>
+        <view class="topic-info" id="{{item.id}}" catchtap='redictDetail'>
+          <view class="topic-title"><text>{{item.title}}</text></view>
+          <view class='topic-extra'>
+            <text class="node-name">{{item.node.name}}</text>
+            <text class="member-nickname">{{item.member.username}}</text>
+          </view>
+        </view>
+        <view class="reply-num">{{item.replies}}</view>
+      </view>
+    </block>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>
